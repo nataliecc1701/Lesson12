@@ -1,0 +1,52 @@
+* {
+  /* box-sizing: border-box; */
+}
+
+:focus {
+ /* TODO */
+}
+
+body {
+  background-color: yellow;
+  background-image: linear-gradient(to right, yellow, DarkOrange);
+}
+
+input {
+ /* TODO */
+}
+
+.search-container {
+  padding-top: 250px;
+  margin-left: 35%;
+}
+.search-container input,
+.search-container .suggestions {
+  background-color: inherit;
+}
+.search-container input {
+  border-style: inset;
+  border-width: 2px;
+  margin: auto;
+}
+.search-container .suggestions {
+  /* TODO */
+}
+
+ul {
+  list-style-type: none;
+}
+ul.has-suggestions {
+  /* TODO */
+}
+ul li {
+  cursor:pointer;
+  width:20%;
+  margin-left:0;
+}
+ul li mark {
+  font-weight: bold;
+  background-color: inherit;
+}
+ul li:hover {
+  background-color: darkorange;
+}
