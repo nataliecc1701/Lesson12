@@ -51,19 +51,14 @@ function showSuggestions(results, inputVal) {
 	}
 }
 
-function caseInsensitiveAddTag(toChange, searchString, tag) {
-	srch = searchString.toLowerCase();
-	morphedStr = toChange.toLowerCase().replace(srch, `<${tag}>${srch}</${tag}>`)
-	morphedStr[0] = morphedStr[0].toUpperCase();
-	return morphedStr;
-}
-
 function useSuggestion(e) {
 	// Get which li was clicked from the event handler and copy the text from that li
 	// into the search box
 	if (e.target.tagName === "LI") {
 		input.value = e.target.innerText;
 	}
+
+	suggestions.innerHTML = "";
 }
 
 input.addEventListener('keyup', searchHandler);
